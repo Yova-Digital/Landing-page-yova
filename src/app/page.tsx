@@ -50,9 +50,6 @@ export default function Home() {
           <a href="#features" className="text-gray-300 hover:text-white transition-all duration-300 font-medium" onClick={() => scrollToSection('features')}>المميزات</a>
           <a href="#pricing" className="text-gray-300 hover:text-white transition-all duration-300 font-medium" onClick={() => scrollToSection('pricing')}>الأسعار</a>
           <a href="#faq" className="text-gray-300 hover:text-white transition-all duration-300 font-medium" onClick={() => scrollToSection('faq')}>الأسئلة</a>
-          <button className="bg-gradient-to-r from-blue-600 to-blue-700 px-8 py-3 rounded-full hover:from-blue-500 hover:to-blue-600 transition-all duration-300 font-semibold shadow-lg shadow-blue-600/25 hover:shadow-blue-500/40 hover:scale-105">
-            ابدأ الآن
-          </button>
         </div>
       </nav>
 
@@ -333,7 +330,6 @@ export default function Home() {
                   </div>
                 </div>
               </div>
-
             </div>
           </div>
 
@@ -441,8 +437,8 @@ export default function Home() {
               {
                 name: "الأساسية",
                 nameEn: "Starter",
-                price: "$19",
-                priceAr: "200 ج.م",
+                price: "300 ج.م",
+                priceAr: "300 جنيه مصري",
                 popular: false,
                 target: "للمستقلين الجدد والمبتدئين",
                 features: [
@@ -462,8 +458,8 @@ export default function Home() {
               {
                 name: "المتقدمة",
                 nameEn: "Professional", 
-                price: "$49",
-                priceAr: "500 ج.م",
+                price: "700 ج.م",
+                priceAr: "700 جنيه مصري",
                 popular: true,
                 target: "للمستقلين المحترفين والفرق الصغيرة",
                 features: [
@@ -483,8 +479,8 @@ export default function Home() {
               {
                 name: "الشاملة",
                 nameEn: "Enterprise",
-                price: "$99",
-                priceAr: "1000 ج.م",
+                price: "1200 ج.م",
+                priceAr: "1200 جنيه مصري",
                 popular: false,
                 target: "للفرق الكبيرة والوكالات والمؤسسات",
                 features: [
@@ -513,9 +509,6 @@ export default function Home() {
                   <p className="text-sm text-gray-400 mb-4">{plan.target}</p>
                   <div className="text-4xl font-bold mb-2 text-white">
                     {plan.price} <span className="text-lg text-gray-400 font-normal">/شهر</span>
-                  </div>
-                  <div className="text-sm text-blue-400 font-medium">
-                    أو {plan.priceAr}/شهر
                   </div>
                 </div>
                 
